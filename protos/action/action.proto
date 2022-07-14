@@ -302,22 +302,30 @@ message SetReturnToLaunchAltitudeResponse {
     ActionResult action_result = 1;
 }
 
-message DisableCameraRequest {}
+message DisableCameraRequest {
+    int32 target_component_id = 1;
+}
 message DisableCameraResponse {
     ActionResult action_result = 1;
 }
 
-message EnableCameraRequest {}
+message EnableCameraRequest {
+    int32 target_component_id = 1;
+}
 message EnableCameraResponse {
     ActionResult action_result = 1;
 }
 
-message DisableChargerRequest {}
+message DisableChargerRequest {
+    int32 target_component_id = 1;
+}
 message DisableChargerResponse {
     ActionResult action_result = 1;
 }
 
-message EnableChargerRequest {}
+message EnableChargerRequest {
+    int32 target_component_id = 1;
+}
 message EnableChargerResponse {
     ActionResult action_result = 1;
 }
