@@ -65,9 +65,13 @@ message SubscribeTakeoffRequest {}
 
 message SubscribeLandRequest {}
 
-message SubscribeRebootRequest {}
+message SubscribeRebootRequest {
+    int32 target_component_id = 1;
+}
 
-message SubscribeShutdownRequest {}
+message SubscribeShutdownRequest {
+    int32 target_component_id = 1;
+}
 
 message SubscribeTerminateRequest {}
 
